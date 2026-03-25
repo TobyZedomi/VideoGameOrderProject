@@ -147,15 +147,11 @@ public class TCPVideoGameServer implements Runnable {
                                     if (checkIfUserExist == true) {
                                         if (checkPasswordsMatch == true) {
                                             if (checkPasswordFormat == true) {
-                                                if (checkEmailFormat == true) {
 
                                                     userManager.registerUser(usernameReg, password);
                                                     jsonResponse = createStatusResponse(UserUtilities.REGISTER_SUCCESSFUL, "Register Successful");
                                                     log.info("User {} successfully registered with us ", usernameReg);
-                                                } else {
-                                                    jsonResponse = createStatusResponse(UserUtilities.INVALID_EMAIL_FORMAT, "Username must be in email format with @ and e.g .com at the end");
-                                                    log.info("User {} failed registration", usernameReg);
-                                                }
+
                                             } else {
                                                 jsonResponse = createStatusResponse(UserUtilities.INVALID_PASSWORD_FORMAT, "Password format must be 8 or more characters long, have at least 1 capital letter, 1 upper case and 1 special character");
                                                 log.info("User {} failed registration", usernameReg);

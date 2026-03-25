@@ -323,16 +323,16 @@ public class OrderManager implements IOrderManager {
     private void bootstrapSellOrderList() {
 
         ArrayList<Order> orders = new ArrayList();
-        orders.add(new Order("toby@gmail.com", "S", "GTA 5", 50, LocalDateTime.of(2026, 02, 9, 5, 34)));
-        orders.add(new Order("sean@gmail.com", "S", "GTA 5", 100, LocalDateTime.of(2026, 02, 9, 5, 34)));
+        orders.add(new Order("toby", "S", "GTA 5", 50, LocalDateTime.of(2026, 02, 9, 5, 34)));
+        orders.add(new Order("sean", "S", "GTA 5", 100, LocalDateTime.of(2026, 02, 9, 5, 34)));
 
         ArrayList<Order> orders1 = new ArrayList();
-        orders1.add(new Order("sean@gmail.com", "S", "NBA 2K", 10, LocalDateTime.of(2026, 02, 9, 4, 34)));
-        orders1.add(new Order("adam@gmail.com", "S", "NBA 2K", 10, LocalDateTime.of(2026, 02, 2, 14, 44)));
+        orders1.add(new Order("sean", "S", "NBA 2K", 10, LocalDateTime.of(2026, 02, 9, 4, 34)));
+        orders1.add(new Order("adam", "S", "NBA 2K", 10, LocalDateTime.of(2026, 02, 2, 14, 44)));
 
 
         ArrayList<Order> orders2 = new ArrayList();
-        orders2.add(new Order("adam@gmail.com", "S", "Fortnite", 70, LocalDateTime.of(2026, 02, 9, 5, 34)));
+        orders2.add(new Order("adam", "S", "Fortnite", 70, LocalDateTime.of(2026, 02, 9, 5, 34)));
 
         sellOrders.put("GTA 5", orders);
         sellOrders.put("NBA 2K", orders1);
@@ -343,15 +343,15 @@ public class OrderManager implements IOrderManager {
     private void bootstrapBuyOrderList() {
 
         ArrayList<Order> orders = new ArrayList();
-        orders.add(new Order("toby@gmail.com", "B", "Roblox", 50, LocalDateTime.of(2026, 02, 9, 5, 34)));
-        orders.add(new Order("sean@gmail.com", "B", "Roblox", 150, LocalDateTime.of(2026, 02, 9, 5, 34)));
+        orders.add(new Order("toby", "B", "Roblox", 50, LocalDateTime.of(2026, 02, 9, 5, 34)));
+        orders.add(new Order("sean", "B", "Roblox", 150, LocalDateTime.of(2026, 02, 9, 5, 34)));
 
         ArrayList<Order> orders1 = new ArrayList();
-        orders1.add(new Order("sean@gmail.com", "B", "Spiderman", 50, LocalDateTime.of(2026, 02, 9, 3, 34)));
-        orders1.add(new Order("adam@gmail.com", "B", "Spiderman", 50, LocalDateTime.of(2026, 02, 2, 13, 12)));
+        orders1.add(new Order("sean", "B", "Spiderman", 50, LocalDateTime.of(2026, 02, 9, 3, 34)));
+        orders1.add(new Order("adam", "B", "Spiderman", 50, LocalDateTime.of(2026, 02, 2, 13, 12)));
 
         ArrayList<Order> orders2 = new ArrayList();
-        orders2.add(new Order("adam@gmail.com", "B", "Minecraft", 70, LocalDateTime.of(2026, 02, 9, 5, 34)));
+        orders2.add(new Order("adam", "B", "Minecraft", 70, LocalDateTime.of(2026, 02, 9, 5, 34)));
 
         buyOrders.put("Roblox", orders);
         buyOrders.put("Spiderman", orders1);
