@@ -175,9 +175,9 @@ public class UserManager implements IUserManager {
     {
 
 
-        users.put("toby@gmail.com", new User("toby@gmail.com", "$2a$12$uyB4h6u16QCLOw.sjy4GmOCralfICrbT93DY8/aZP4F4KwBgstpxy"));
-        users.put("sean@gmail.com", new User("sean@gmail.com", "$2a$12$uyB4h6u16QCLOw.sjy4GmOCralfICrbT93DY8/aZP4F4KwBgstpxy"));
-        users.put("adam@gmail.com", new User("user2@gmail.com", "$2a$12$uyB4h6u16QCLOw.sjy4GmOCralfICrbT93DY8/aZP4F4KwBgstpxy"));
+        users.put("toby", new User("toby", "$2a$12$uyB4h6u16QCLOw.sjy4GmOCralfICrbT93DY8/aZP4F4KwBgstpxy"));
+        users.put("sean", new User("sean", "$2a$12$uyB4h6u16QCLOw.sjy4GmOCralfICrbT93DY8/aZP4F4KwBgstpxy"));
+        users.put("adam", new User("adam", "$2a$12$uyB4h6u16QCLOw.sjy4GmOCralfICrbT93DY8/aZP4F4KwBgstpxy"));
 
     }
 
